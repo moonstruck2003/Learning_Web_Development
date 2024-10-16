@@ -12,7 +12,7 @@ app.get("/",(req,res)=>{
 
     if(day === 2 || day===1){
         type = "the weekend";
-        adv = "gave sim fun";
+        adv = "have some fun";
     }
 
     res.render("index.ejs",{
