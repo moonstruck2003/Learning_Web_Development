@@ -27,8 +27,8 @@ app.get("/", (req, res) => {
 
 app.post("/submit", (req, res) => {
   //Step 2 - Make the generate name functionality work
-  const randomInt1 = Math.floor(Math.random() * 100) + 1;
-  const randomInt2 = Math.floor(Math.random() * 100) + 1;
+  const randomInt1 = Math.floor(Math.random() * adj.length) ;
+  const randomInt2 = Math.floor(Math.random() * noun.length) ;
   const arr = adj[randomInt1] + " " + noun[randomInt2];
   res.render("index.ejs",{
     arr: arr
